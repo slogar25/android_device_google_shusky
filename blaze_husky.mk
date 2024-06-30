@@ -23,7 +23,6 @@ $(call inherit-product, device/google/zuma/aosp_common.mk)
 $(call inherit-product, device/google/shusky/device-husky.mk)
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 $(call inherit-product, device/google/shusky/aosp_husky.mk)
-$(call inherit-product, vendor/google/husky/husky-vendor.mk)
 
 include device/google/shusky/husky/device-lineage.mk
 include device/google/shusky/BoardConfigLineage.mk
@@ -33,17 +32,26 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2992
 TARGET_SCREEN_WIDTH := 1344
 
- #Blaze Stuff + Xtras
+ #Blaze Stuff
 BLAZE_BUILD_TYPE := UNOFFICIAL
 BLAZE_MAINTAINER := Slogar25
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_BLUR := true
 TARGET_UDFPS_ANIMATIONS := true
 WITH_GAPPS := true
+
+ #Xtras
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_IS_PIXEL_8 := true
 TARGET_IS_PIXEL := true
 EXTRA_UDFPS_ICONS := true
+TARGET_SUPPORTS_ADPATIVE_CHARGING := true
+TARGET_SUPPORTS_GOOGLE_BATTERY := true
+TARGET_SUPPORTS_GOOGLE_CAMERA := true
+TARGET_SUPPORTS_DREAMLINER := true
+TARGET_SUPPORTS_NOW_PLAYING := true
+TARGET_BUILD_FULLY_SIGN := true
+TARGET_INCLUDE_PIXEL_SEPOLICY := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := blaze_husky
@@ -61,3 +69,4 @@ BUILD_FINGERPRINT := google/husky/husky:14/AP2A.240605.024/11860263:user/release
 DEVICE_MANIFEST_FILE := \
 	device/google/shusky/manifest.xml
 
+$(call inherit-product, vendor/google/husky/husky-vendor.mk)

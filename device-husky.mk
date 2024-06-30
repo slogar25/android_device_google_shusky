@@ -471,3 +471,5 @@ PRODUCT_PACKAGES += \
     AvoidAppsInCutoutOverlay
 
 PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
+
+#include device/google/shusky/husky/BoardConfig.mk

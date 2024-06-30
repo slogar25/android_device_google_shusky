@@ -56,7 +56,7 @@ include device/google/shusky/device-shusky-common.mk
 include device/google/zuma/BoardConfig-common.mk
 -include vendor/google/zuma/prebuilts/BoardConfigVendor.mk
 -include vendor/google/husky/proprietary/BoardConfigVendor.mk
-include device/google/shusky-sepolicy/husky-sepolicy.mk
+include device/google/shusky/sepolicy/husky-sepolicy.mk
 include device/google/shusky/wifi/BoardConfig-wifi.mk
 
 # Android Virtualization Framework (AVF) team is using husky with hypervisor in

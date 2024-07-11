@@ -14,6 +14,14 @@ $(call inherit-product, device/google/zuma/lineage_common.mk)
 
 include device/google/shusky/husky/device-lineage.mk
 
+# Xtras
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_IS_PIXEL_8 := true
+TARGET_IS_PIXEL := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8 Pro

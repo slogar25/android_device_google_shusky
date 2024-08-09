@@ -21,6 +21,16 @@ WITH_GMS := true
 TARGET_IS_PIXEL_8 := true
 TARGET_IS_PIXEL := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_NOW_PLAYING := true
+TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+#Extra Build Flags
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+
+#Launcher
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_INCLUDE_LAWNCHAIR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
